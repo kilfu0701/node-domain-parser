@@ -3,7 +3,7 @@ node-domain-parser
 
 A simple parser that breaks apart a domain name into its components
 
-[![build status](https://secure.travis-ci.org/kilfu0701/node-domain-parser.png)](http://travis-ci.org/kilfu0701/node-domain-parser)
+[![Build Status](https://travis-ci.org/kilfu0701/node-domain-parser.svg?branch=master)](https://travis-ci.org/kilfu0701/node-domain-parser)
 
 install
 =======
