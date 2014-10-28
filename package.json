@@ -1,0 +1,31 @@
+{
+  "name": "domain-parser",
+  "version": "0.0.2",
+  "description": "Getting the domain name without subdomains.",
+  "main": "index.js",
+  "dependencies": {
+    "tape": "^2.1.1",
+    "underscore": "^1.7.0",
+    "validator": "^3.22.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "node test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kilfu0701/node-domain-parser"
+  },
+  "keywords": [
+    "domain",
+    "name",
+    "parser",
+    "subdomain"
+  ],
+  "author": "kilfu0701 (BoRu Su)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kilfu0701/node-domain-parser/issues"
+  },
+  "homepage": "https://github.com/kilfu0701/node-domain-parser"
+}
