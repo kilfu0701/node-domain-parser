@@ -22,6 +22,11 @@ var dp = require('domain-parser');
 
 var result = dp('www.google.com.tw').domainName;
 console.log(result);
+// google.com.tw
+
+result = dp('direct.jp-bank.japanpost.jp').domainName;
+console.log(result);
+// japanpost.jp
 ```
 
 license
