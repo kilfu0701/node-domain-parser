@@ -43,7 +43,17 @@ test('basic test', function (t) {
         'info.abril.com.br': 'abril.com.br',
         '127.0.0.1': '127.0.0.1',
         '::1': '::1',
-        'banking.ostsaechsische-sparkasse-dresden.de': 'ostsaechsische-sparkasse-dresden.de'
+        'banking.ostsaechsische-sparkasse-dresden.de': 'ostsaechsische-sparkasse-dresden.de',
+        '食狮.com.cn': '食狮.com.cn',
+        '食狮.公司.cn': '食狮.公司.cn',
+        'www.食狮.公司.cn': '食狮.公司.cn',
+        'shishi.公司.cn': 'shishi.公司.cn',
+        '公司.cn': '公司.cn',
+        '食狮.中国': '食狮.中国',
+        'www.食狮.中国': '食狮.中国',
+        'shishi.中国': 'shishi.中国',
+        '中国': '中国',
+        'www.www.ck': 'www.ck'
     };
 
     for(var i in data) {

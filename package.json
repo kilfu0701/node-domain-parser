@@ -1,6 +1,6 @@
 {
   "name": "domain-parser",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Getting the domain name without subdomains.",
   "main": "index.js",
   "dependencies": {

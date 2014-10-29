@@ -41,14 +41,23 @@ DomainParser.prototype = {
             return domain;
         }
 
-        var arr = domain.split('.').map(function(v){ return v==='www' ? false:v; }).filter(function(v){ return v; });
+        var arr = domain.split('.').filter(function(v){ return v; });
+        if(arr[0] === 'www') {
+            arr.shift();
+        }
+
         var result = '';
 
         for(var i = 0; i < arr.length; i++) {
             var str = arr.slice(i).join('.');
+
             if(tld_list[str] === 1 || tld_list['*.' + str] === 1) {
                 // match
-                result = arr.slice(i - 1).join('.');
+                if(i > 0) {
+                    result = arr.slice(i - 1).join('.');
+                } else {
+                    result = arr.slice(i).join('.');
+                }
                 break;
             }
         }
