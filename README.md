@@ -1,7 +1,7 @@
 node-domain-parser
 =======================
 
-A simple parser that breaks apart a domain name into its components
+A simple domain parser, getting the domain name without subdomains.
 
 [![Build Status](https://travis-ci.org/kilfu0701/node-domain-parser.svg?branch=master)](https://travis-ci.org/kilfu0701/node-domain-parser)
 
