@@ -17,8 +17,8 @@ test('basic test', function (t) {
         'subdomain.example.com': 'example.com',
         'subdomain.example.com.br': 'example.com.br',
         'www.subdomain.example.com.br': 'example.com.br',
-        'www.subdomain.example.biz.br': 'example.biz.br',
-        'subdomain.example.biz.br': 'example.biz.br',
+        'www.subdomain.example.biz.br': 'biz.br',
+        'subdomain.example.biz.br': 'biz.br',
         'subdomain.example.net': 'example.net',
         'www.subdomain.example.net': 'example.net',
         'www.subdomain.example.co.kr': 'example.co.kr',
@@ -33,7 +33,7 @@ test('basic test', function (t) {
         'www.subdomain.example.jobs': 'example.jobs',
         'test': 'test',
         'www.test': 'test',
-        'subdomain.test': 'test',
+        'sub.test': 'test',
         'www.detran.sp.gov.br': 'sp.gov.br',
         'www.mp.sp.gov.br': 'sp.gov.br',
         'ny.library.museum': 'library.museum',
@@ -42,12 +42,12 @@ test('basic test', function (t) {
         'www.library.museum': 'library.museum',
         'info.abril.com.br': 'abril.com.br',
         '127.0.0.1': '127.0.0.1',
-        '::1': '::1'
+        '::1': '::1',
+        'banking.ostsaechsische-sparkasse-dresden.de': 'ostsaechsische-sparkasse-dresden.de'
     };
 
     for(var i in data) {
-        //if(i === 'insane.subdomain.example.jobs')
-            t.equal(dp(i).domainName, data[i]);
+        t.equal(dp(i).domainName, data[i]);
     }
 
 	t.end();
