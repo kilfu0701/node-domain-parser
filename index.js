@@ -8,6 +8,8 @@
  *
  *    Search module:  https://registry.npmjs.org/-/_view/byKeyword?startkey=[%22domain%22]&endkey=[%22domain%22,{}]&group_level=3
  *
+ *    Testing cases:  http://mxr.mozilla.org/mozilla-central/source/netwerk/test/unit/data/test_psl.txt?raw=1
+ *
  * @author
  *    kilfu0701
  */

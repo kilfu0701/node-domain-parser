@@ -29,6 +29,21 @@ console.log(result);
 // japanpost.jp
 ```
 
+If you have a url look likes `https://www.google.com.tw/search?q=python&biw=1440&bih=805&source=lnms&sa=X&ei=se9SVIqlKonp8gW5mYKIBg`
+```
+var url = require('url'),
+    dp = require('domain-parser');
+
+var link = 'https://www.google.com.tw/search?q=python&biw=1440&bih=805&source=lnms&sa=X&ei=se9SVIqlKonp8gW5mYKIBg'
+var hostname = url.parse(link).hostname;
+console.log(hostname);
+// www.google.com.tw
+
+var domain = dp(hostname).domainName;
+console.log(domain);
+// google.com.tw
+```
+
 license
 =======
 
