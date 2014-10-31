@@ -29,8 +29,9 @@ console.log(result);
 // japanpost.jp
 ```
 
-If you have a url look likes `https://www.google.com.tw/search?q=python&biw=1440&bih=805&source=lnms&sa=X&ei=se9SVIqlKonp8gW5mYKIBg`
-```
+If you have a url look likes...
+`https://www.google.com.tw/search?q=python&biw=1440&bih=805&source=lnms&sa=X&ei=se9SVIqlKonp8gW5mYKIBg`
+```javascript
 var url = require('url'),
     dp = require('domain-parser');
 
